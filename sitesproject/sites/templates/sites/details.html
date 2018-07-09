@@ -1,0 +1,30 @@
+{% extends 'sites/layout.html' %}
+{% block content %}
+<h1>Sites Details - {{site}}</h1>
+
+<ul class="list-group">
+
+    <table class="table">
+        <thead>
+            <tr><td><strong>Date</strong></td>
+            <td><strong>A Value</strong></td><td><strong>B Value</strong></td></tr>
+        </thead>
+        
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{item}}</td>
+                <td>{{item.a_value}}</td>
+                <td>{{item.b_value}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <hr>
+    <p>
+        {{item|length}} sites found
+    </p>
+
+</ul>
+{% endblock %}
