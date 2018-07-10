@@ -2,6 +2,16 @@
 
 Is written in Python with Django framework.
 
+# Clone repo:
+
+```bash
+git clone https://github.com/boolow5/3wm-challenge.git
+
+# go to repo home directory
+cd 3wm-challenge
+```
+
+
 ## To run locally:
 
 To run this app we recommend using python3 and make sure it's installed. This assumes you are running on Unix compatible system.
