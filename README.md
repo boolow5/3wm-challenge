@@ -58,6 +58,13 @@ cd sitesproject
     python manage.py createsuperuser
 ```
 
+If you encounter [this issue](https://github.com/boolow5/3wm-challenge/issues/3) you can fix it with:
+
+```bash 
+python manage.py makemigrations sites
+python manage.py migrate sites
+```
+
 ## 5. Run local server
 
 ```bash
