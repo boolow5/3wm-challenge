@@ -1,19 +1,21 @@
 {% extends 'sites/layout.html' %}
 {% block content %}
-<h1>Sites Details - {{site}}</h1>
+<h1>Summery</h1>
+<a href="/summary"><button type="button" class="btn btn-primary active">Sum</button></a>
+<a href="/summary-average"><button type="button" class="btn btn-primary">Average</button></a>
 
 <ul class="list-group">
 
     <table class="table">
         <thead>
-            <tr><td><strong>Date</strong></td>
+            <tr><td><strong>Site</strong></td>
             <td><strong>A Value</strong></td><td><strong>B Value</strong></td></tr>
         </thead>
         
         <tbody>
             {% for item in items %}
             <tr>
-                <td>{{item}}</td>
+                <td>{{item.name}}</td>
                 <td>{{item.a_value}}</td>
                 <td>{{item.b_value}}</td>
             </tr>
